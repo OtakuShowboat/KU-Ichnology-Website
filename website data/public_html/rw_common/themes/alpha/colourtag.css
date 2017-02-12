@@ -78,7 +78,7 @@ a:hover, a:active {
 }
 
 #navcontainer #current,
-#navcontainer .currentAncestor {
+#navcontainer .currentAncestor, #navcontainer .current, .current {
 	color: #FFFFFF;
 }
 
