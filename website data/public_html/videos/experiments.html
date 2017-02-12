@@ -16,44 +16,53 @@
   <link rel="stylesheet"
         type="text/css"
         media="screen"
-        href="../rw_common/themes/alpha/styles.css" />
-        <!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/alpha/ie6.css"  /><![endif]-->
+        href="/rw_common/themes/alpha/styles.css" />
+        <!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/alpha/ie6.css"  /><![endif]-->
   <link rel="stylesheet"
         type="text/css"
         media="screen"
-        href="../rw_common/themes/alpha/colourtag.css" />
+        href="/rw_common/themes/alpha/colourtag.css" />
   <link rel="stylesheet"
         type="text/css"
         media="print"
-        href="../rw_common/themes/alpha/print.css" />
+        href="/rw_common/themes/alpha/print.css" />
   <link rel="stylesheet"
         type="text/css"
         media="handheld"
-        href="../rw_common/themes/alpha/handheld.css" />
-        <!--[if IE 6]><style type="text/css" media="screen">body {behavior: url(../rw_common/themes/alpha/csshover.htc);}</style><![endif]-->
+        href="/rw_common/themes/alpha/handheld.css" />
+        <!--[if IE 6]><style type="text/css" media="screen">body {behavior: url(/rw_common/themes/alpha/csshover.htc);}</style><![endif]-->
   <link rel="stylesheet"
         type="text/css"
         media="screen"
-        href="../rw_common/themes/alpha/css/width/800.css" />
+        href="/rw_common/themes/alpha/css/width/800.css" />
   <link rel="stylesheet"
         type="text/css"
         media="screen"
         href=
-        "../rw_common/themes/alpha/css/sidebar/sidebar_hide.css" />
+        "/rw_common/themes/alpha/css/sidebar/sidebar_hide.css" />
 <script type="text/javascript"
-      src="../rw_common/themes/alpha/javascript.js">
+      src="/rw_common/themes/alpha/javascript.js">
+</script>
+<script type="text/javascript" 
+		src="/rw_common/themes/alpha/jquery-3.1.1.min.js" >
+</script>
+<script> 
+$(function(){
+  $("#header").load("/header.html"); 
+  $("#footer").load("/footer.html"); 
+});
 </script>
 <script type="text/javascript"
       charset="utf-8">
 //<![CDATA[
-                        var blankSrc = "../rw_common/themes/alpha/png/blank.gif";
+                        var blankSrc = "/rw_common/themes/alpha/png/blank.gif";
 //]]>
 </script>
 <style type="text/css">
 /*<![CDATA[*/
 
                 img.pngfix {
-                        behavior:       url("../rw_common/themes/alpha/png/pngbehavior.htc");
+                        behavior:       url("/rw_common/themes/alpha/png/pngbehavior.htc");
                 }
 
 /*]]>*/
@@ -61,413 +70,10 @@
 </head>
 
 <body>
-  <div id="bodyGrad">
-    <img class="pngfix"
-         src="../rw_common/themes/alpha/images/body_grad.png"
-         alt=""
-         style="width: 3000px; height: 400px;" />
-  </div>
+<div id="container">
 
-  <div id="container">
-    <!-- Start container -->
 
-    <div id="pageHeader">
-      <!-- Start page header -->
-
-      <div id="grad">
-        <img class="pngfix"
-             src=
-             "../rw_common/themes/alpha/images/header_top_grad.png"
-             alt=""
-             style="width: 3000px; height: 72px;" />
-      </div>
-
-      <h1>KU Ichnology</h1>
-
-      <h2>Studying the Traces of Life</h2><img src="../websizeimages/image1c.jpg" />
-    </div><!-- End page header -->
-
-    <div id="navcontainer">
-      <!-- Start Navigation -->
-
-      <ul>
-        <li><a href="../page0/page0.html"
-           rel="self">KU Ichnology</a></li>
-
-        <li>
-          <a href="../aboutus/aboutus.html"
-              rel="self">About Us</a>
-
-          <ul>
-            <li><a href="../aboutus/aboutus/drhasiotis.html"
-               rel="self">Dr. Hasiotis</a></li>
-
-            <li><a href="../aboutus/aboutus/gradstudents.html"
-               rel="self">Graduate Students</a></li>
-
-            <li><a href="../aboutus/aboutus/currentresearch.html"
-               rel="self">Current Research</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="../poi/poi.html"
-              rel="self">Principles of Ichnology</a>
-
-          <ul>
-            <li><a href="../poi/poi/introduction.html"
-               rel="self">Introduction&nbsp;to&nbsp;Ichnology</a></li>
-
-            <li><a href="../poi/poi/glossary.html"
-               rel="self">Glossary</a></li>
-
-            <li><a href="../poi/poi/models.html"
-               rel="self">Ichnofacies Models</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="../tracefossils.html"
-              rel="self">Trace Fossils</a>
-
-        <li>
-        <a href="videos.html"
-              rel="self"
-              class="currentAncestor">Videos</a>
-
-          <ul>
-            <li><a href="lectures.html"
-               rel="self">Trace&nbsp;Fossil&nbsp;Lectures</a></li>
-
-            <li><a href="inthewild.html"
-               rel="self">Tracemakers&nbsp;in&nbsp;the&nbsp;Wild</a></li>
-
-            <li><a href="experiments.html"
-               rel="self"
-               id="current">Tracemaking&nbsp;Experiments</a>
-               
-            
-              <ul>
-                <li><a href=
-                "experiments/antsburrowing.html"
-                   rel="self">Ants&nbsp;Burrowing</a></li>
-                
-                <li><a href=
-                "experiments/antscarrying.html"
-                   rel="self">Ants Carrying</a></li>
-                
-                <li><a href=
-                "experiments/antscutting.html"
-                   rel="self">Ants Cutting</a></li>
-                   
-                <li><a href=
-                "experiments/antspulling.html"
-                   rel="self">Ants Pulling</a></li>
-                   
-                <li><a href=
-                "experiments/antspushing.html"
-                   rel="self">Ants Pushing</a></li>
-                
-                
-                   
-                <li><a href=
-                "experiments/antssawing.html"
-                   rel="self">Ants Sawing</a></li>
-                   
-                <li><a href=
-                "experiments/antsscraping.html"
-                   rel="self">Ants Scraping</a></li> 
-                   
-                <li><a href=
-                "experiments/antstransporting.html"
-                   rel="self">Ants&nbsp;Transporting</a></li> 
-                   
-                <li><a href=
-                "experiments/antstunneling.html"
-                   rel="self">Ants Tunneling</a></li>
-                   
-                <li><a href=
-                "experiments/antsupwardexcavation.html"
-                   rel="self">Ants&nbsp;Upward&nbsp;Excavation</a></li>
-                   
-                <li><a href=
-                "experiments/battrackmaking1.html"
-                   rel="self">Bat&nbsp;Trackmaking&nbsp;1</a></li>
-                   
-                <li><a href=
-                "experiments/battrackmaking2.html"
-                   rel="self">Bat&nbsp;Trackmaking&nbsp;2</a></li>
-                
-                <li><a href=
-                "experiments/beetlegrubburrowing.html"
-                   rel="self">Beetle&nbsp;Grub&nbsp;Burrowing</a></li>
-                   
-                <li><a href=
-                "experiments/cicadanymphburrowing.html"
-                   rel="self">Cicada&nbsp;Nymph&nbsp;Burrowing</a></li>
-
-                <li><a href=
-                "experiments/crayfishtrackmaking1.html"
-                   rel="self">Crayfish&nbsp;Trackmaking&nbsp;1</a></li>
-                   
-                <li><a href=
-                "experiments/crayfishtrackmaking2.html"
-                   rel="self">Crayfish&nbsp;Trackmaking&nbsp;2</a></li>
-                   
-                <li><a href=
-                "experiments/crayfishtrackmaking3.html"
-                   rel="self">Crayfish&nbsp;Trackmaking&nbsp;3</a></li>
-                   
-                <li><a href=
-                "experiments/crayfishtrackmaking4.html"
-                   rel="self">Crayfish&nbsp;Trackmaking&nbsp;4</a></li>
-                   
-                <li><a href=
-                "experiments/elephanttrackmaking1.html"
-                   rel="self">Elephant&nbsp;Trackmaking&nbsp;1</a></li>
-                   
-                <li><a href=
-                "experiments/elephanttrackmaking2.html"
-                   rel="self">Elephant&nbsp;Trackmaking&nbsp;2</a></li>
-                   
-                <li><a href=
-                "experiments/elephanttrackmaking3.html"
-                   rel="self">Elephant&nbsp;Trackmaking&nbsp;3</a></li>
-                   
-                <li><a href=
-                "experiments/elephanttrackmaking4.html"
-                   rel="self">Elephant&nbsp;Trackmaking&nbsp;4</a></li>
-                   
-                <li><a href=
-                "experiments/elephanttrackmaking5.html"
-                   rel="self">Elephant&nbsp;Trackmaking&nbsp;5</a></li>
-                   
-                <li><a href=
-                "experiments/ostracodeburrowing.html"
-                   rel="self">Ostracode&nbsp;Burrowing</a></li>
-                   
-                <li><a href=
-                "experiments/ostracodetrailmaking.html"
-                   rel="self">Ostracode&nbsp;Trailmaking</a></li>
-                   
-                <li><a href=
-                "experiments/vinegaroontrackmaking1.html"
-                   rel="self">Vinegaroon&nbsp;Trackmaking&nbsp;1</a></li>
-                   
-                <li><a href=
-                "experiments/vinegaroontrackmaking2.html"
-                   rel="self">Vinegaroon&nbsp;Trackmaking&nbsp;2</a></li>
-                   
-                <li><a href=
-                "experiments/vinegaroontrackmaking3.html"
-                   rel="self">Vinegaroon&nbsp;Trackmaking&nbsp;3</a></li>
-                   
-                
-               </ul>
-            </li>
-    
-                   
-            <li><a href="animations.html"
-               rel="self">Animations&nbsp;and&nbsp;Anaglyphs</a>
-               
-              <ul>
-               <li><a href=
-                "animations/3dbeecells.html"
-                   rel="self">3D&nbsp;Bee&nbsp;Cells</a></li>
-                
-                <li><a href=
-                "animations/3dfeoichnus.html"
-                   rel="self">3D Feoichnus</a></li>
-                
-                <li><a href=
-                "animations/3dghostcrabburrow.html"
-                   rel="self">3D&nbsp;Ghost&nbsp;Crab&nbsp;Burrow</a></li>
-                   
-                <li><a href=
-                "animations/3dhorsemanure.html"
-                   rel="self">3D&nbsp;Horse&nbsp;Manure</a></li>
-                   
-                <li><a href=
-                "animations/largeedaph.html"
-                   rel="self">3D&nbsp;Large&nbsp;Edaphichnium</a></li>
-                
-                <li><a href=
-                "animations/3dmarshcrabburrow.html"
-                   rel="self">3D&nbsp;Marsh&nbsp;Crab&nbsp;Burrow</a></li>
-                 
-                <li><a href=
-                "animations/3dsandboaburrow.html"
-                   rel="self">3D&nbsp;Sand&nbsp;Boa&nbsp;Burrow</a></li>   
-                 
-                <li><a href=
-                "animations/3dscorpionburrow.html"
-                   rel="self">3D&nbsp;Scorpion&nbsp;Burrow</a></li>
-                   
-                <li><a href=
-                "animations/3dskinkburrow.html"
-                   rel="self">3D&nbsp;Skink&nbsp;Burrow</a></li>
-                   
-                <li><a href=
-                "animations/3dsmalledaph.html"
-                   rel="self">3D&nbsp;Small&nbsp;Edaphichnium</a></li>
-                   
-                <li><a href=
-                "animations/3dtarantulaburrow.html"
-                   rel="self">3D&nbsp;Tarantula&nbsp;Burrow</a></li>
-                   
-                <li><a href=
-                "animations/3dtigerbeetleburrow.html"
-                   rel="self">3D&nbsp;Tiger&nbsp;Beetle&nbsp;Burrow</a></li> 
-                   
-                <li><a href=
-                "animations/3dtrackcontour.html"
-                   rel="self">3D&nbsp;Track&nbsp;Contour</a></li>
-                   
-                <li><a href=
-                "animations/3dtrackstereo.html"
-                   rel="self">3D&nbsp;Track&nbsp;Stereo</a></li>
-                   
-                <li><a href=
-                "animations/3dwireframe.html"
-                   rel="self">3D&nbsp;Wire&nbsp;Frame</a></li>
-                   
-                <li><a href=
-                "animations/3dwolfspiderburrow.html"
-                   rel="self">3D&nbsp;Wolf&nbsp;Spider&nbsp;Burrow</a></li>
-               
-               <li><a href=
-                "animations/elephanttrack.html"
-                   rel="self">Elephant Track</a></li>
-
-                <li><a href=
-                "animations/feoichnustrace.html"
-                   rel="self">Feoichnus Trace</a></li>
-
-                <li><a href=
-                "animations/ghostcrabburrow.html"
-                   rel="self">Ghost Crab Burrow</a></li>
-
-                <li><a href=
-                "animations/marshcrabburrow.html"
-                   rel="self">Marsh Crab Burrow</a></li>
-
-                <li><a href=
-                "animations/sandboaburrow.html"
-                   rel="self">Sand Boa Burrow</a></li>
-
-                <li><a href=
-                "animations/scorpionburrow.html"
-                   rel="self">Scorpion Burrow</a></li>
-
-                <li><a href=
-                "animations/skinkburrow.html"
-                   rel="self">Skink Burrow</a></li>
-
-                <li><a href=
-                "animations/tetradactyltrackcast.html"
-                   rel="self">Tetradactyl&nbsp;Track&nbsp;Cast</a></li>
-
-                <li><a href=
-                "animations/tigerbeetlelarvaburrow.html"
-                   rel="self">Tiger&nbsp;Beetle&nbsp;Larva&nbsp;Burrow</a></li>
-
-                <li><a href=
-                "animations/tridactyltrackmold.html"
-                   rel="self">Tridactyl Track Mold</a></li>
-
-                <li><a href=
-                "animations/wolfspiderburrow.html"
-                   rel="self">Wolf Spider Burrow</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="../references/references.html"
-              rel="self">References</a>
-
-          <ul>
-            <li><a href=
-            "../references/references/publicationlist.html"
-               rel="self">Publication List</a></li>
-
-            <li>
-              <a href="../references/references/bibliography.html"
-                  rel="self">Bibliography</a>
-
-              <ul>
-                <li><a href=
-                "../references/references/bibliography/ant_nests_refs.html"
-                   rel="self">Ant&nbsp;Nests</a></li>
-
-                <li><a href=
-                "../references/references/bibliography/crab_burrows_refs.html"
-                   rel="self">Crab&nbsp;Burrows</a></li>   
-                  
-                <li><a href=
-                "../references/references/bibliography/crayfish_burrows_refs.html"
-                   rel="self">Crayfish&nbsp;Burrows</a></li>  
-                   
-                <li><a href=
-                "../references/references/bibliography/dung_beetle_balls_refs.html"
-                   rel="self">Dung&nbsp;Beetle&nbsp;Balls</a></li>
-
-                <li><a href=
-                "../references/references/bibliography/earthworm_burrows_refs.html"
-                   rel="self">Earthworm&nbsp;Burrows</a></li>    
-                   
-                <li><a href=
-                "../references/references/bibliography/insect_traces_refs.html"
-                   rel="self">Insect&nbsp;Traces</a></li>
-                
-                <li><a href=
-                "../references/references/bibliography/lungfish_burrows_refs.html"
-                   rel="self">Lungfish&nbsp;Burrows</a></li>    
-                 
-                <li><a href=
-                "../references/references/bibliography/scorpion_burrows_refs.html"
-                   rel="self">Scorpion&nbsp;Burrows</a></li>    
-                 
-                <li><a href=
-                "../references/references/bibliography/spider_burrows_refs.html"
-                   rel="self">Spider&nbsp;Burrows</a></li>    
-                
-                <li><a href=
-                "../references/references/bibliography/termite_nests_refs.html"
-                   rel="self">Termite&nbsp;Nests</a></li>
-
-                <li><a href=
-                "../references/references/bibliography/vertebrate_trackways_refs.html"
-                   rel="self">Vertebrate&nbsp;Trackways</a></li>  
-                   
-                <li><a href=
-                "../references/references/bibliography/wasp_and_bee_nests_refs.html"
-                   rel="self">Wasp&nbsp;and&nbsp;Bee&nbsp;Nests</a></li>    
-              
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li><a href="../links/page3.html"
-           rel="self">Links</a></li>
-      </ul>
-    </div><!-- End navigation -->
-
-    <div class="clearer"></div>
-
-    <div id="sidebarContainer">
-      <!-- Start Sidebar wrapper -->
-
-      <div id="sidebar">
-        <!-- Start sidebar content -->
-
-        <h1 class="sideHeader"></h1><!-- Sidebar header -->
-        <!-- sidebar content you enter in the page inspector -->
-        <!-- sidebar content such as the blog archive links -->
-      </div><!-- End sidebar content -->
-    </div><!-- End sidebar wrapper -->
+  <div id="header"></div>
 
     <div id="contentContainer">
       <!-- Start main content wrapper -->
@@ -483,196 +89,196 @@
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antsburrowing.html"
+           "/videos/experiments/antsbreakthrough.html"
            rel="external"
-           title="Ants Burrowing">Ants Burrowing</a>
+           title="Ants Burrowing">Ants Breaking Through Tunnel Wall</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antscarrying.html"
+           "/videos/experiments/antscarrying.html"
            rel="external"
            title="Ants Carrying">Ants Carrying</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antscutting.html"
+           "/videos/experiments/antscutting.html"
            rel="external"
            title="Ants Cutting">Ants Cutting</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antspulling.html"
+           "/videos/experiments/antspulling.html"
            rel="external"
            title="Ants Pulling">Ants Pulling</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antspushing.html"
+           "/videos/experiments/antspushing.html"
            rel="external"
            title="Ants Pushing">Ants Pushing</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antssawing.html"
+           "/videos/experiments/antssawing.html"
            rel="external"
            title="Ants Sawing">Ants Sawing</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antsscraping.html"
+           "/videos/experiments/antsscraping.html"
            rel="external"
            title="Ants Scraping">Ants Scraping</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antstransporting.html"
+           "/videos/experiments/antstransporting.html"
            rel="external"
            title="Ants Transporting">Ants Transporting</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antstunneling.html"
+           "/videos/experiments/antstunneling.html"
            rel="external"
            title="Ants Tunneling">Ants Tunneling</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/antsupwardexcavation.html"
+           "/videos/experiments/antsupwardexcavation.html"
            rel="external"
            title="Ants Upward Excavation">Ants Upward Excavation</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/battrackmaking1.html"
+           "/videos/experiments/battrackmaking1.html"
            rel="external"
            title="Bat Trackmaking 1">Bat Trackmaking 1</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/battrackmaking2.html"
+           "/videos/experiments/battrackmaking2.html"
            rel="external"
            title="Bat Trackmaking 2">Bat Trackmaking 2</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/beetlegrubburrowing.html"
+           "/videos/experiments/beetlegrubburrowing.html"
            rel="external"
            title="Beetle Grub Burrowing">Beetle Grub Burrowing</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/cicadanymphburrowing.html"
+           "/videos/experiments/cicadanymphburrowing.html"
            rel="external"
            title="Cicada Nymph Burrowing">Cicada Nymph Burrowing</a>
            
             </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/crayfishtrackmaking1.html"
+           "/videos/experiments/crayfishtrackmaking1.html"
            rel="external"
            title="Crayfish Trackmaking 1">Crayfish Trackmaking 1</a>
            
             </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/crayfishtrackmaking2.html"
+           "/videos/experiments/crayfishtrackmaking2.html"
            rel="external"
            title="Crayfish Trackmaking 2">Crayfish Trackmaking 2</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/crayfishtrackmaking3.html"
+           "/videos/experiments/crayfishtrackmaking3.html"
            rel="external"
            title="Crayfish Trackmaking 3">Crayfish Trackmaking 3</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/crayfishtrackmaking4.html"
+           "/videos/experiments/crayfishtrackmaking4.html"
            rel="external"
            title="Crayfish Trackmaking 4">Crayfish Trackmaking 4</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/elephanttrackmaking1.html"
+           "/videos/experiments/elephanttrackmaking1.html"
            rel="external"
            title="Elephant Trackmaking 1">Elephant Trackmaking 1</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/elephanttrackmaking2.html"
+           "/videos/experiments/elephanttrackmaking2.html"
            rel="external"
            title="Elephant Trackmaking 2">Elephant Trackmaking 2</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/elephanttrackmaking3.html"
+           "/videos/experiments/elephanttrackmaking3.html"
            rel="external"
            title="Elephant Trackmaking 3">Elephant Trackmaking 3</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/elephanttrackmaking4.html"
+           "/videos/experiments/elephanttrackmaking4.html"
            rel="external"
            title="Elephant Trackmaking 4">Elephant Trackmaking 4</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/elephanttrackmaking5.html"
+           "/videos/experiments/elephanttrackmaking5.html"
            rel="external"
            title="Elephant Trackmaking 5">Elephant Trackmaking 5</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/ostracodeburrowing.html"
+           "/videos/experiments/ostracodeburrowing.html"
            rel="external"
            title="Ostracode Burrowing">Ostracode Burrowing</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/ostracodetrailmaking.html"
+           "/videos/experiments/ostracodetrailmaking.html"
            rel="external"
            title="Ostracode Trailmaking">Ostracode Trailmaking</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/vinegaroontrackmaking1.html"
+           "/videos/experiments/vinegaroontrackmaking1.html"
            rel="external"
            title="Vinegaroon Trackmaking 1">Vinegaroon Trackmaking 1</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/vinegaroontrackmaking2.html"
+           "/videos/experiments/vinegaroontrackmaking2.html"
            rel="external"
            title="Vinegaroon Trackmaking 2">Vinegaroon Trackmaking 2</a>
            
            </span><span style=
            "font-size:14px;"><br /></span><span style=
            "font-size:14px;"><a href=
-           "../videos/experiments/vinegaroontrackmaking3.html"
+           "/videos/experiments/vinegaroontrackmaking3.html"
            rel="external"
            title="Vinegaroon Trackmaking 3">Vinegaroon Trackmaking 3</a>
            
@@ -683,57 +289,10 @@
     <div class="clearer"></div>
 
     <div id="footer">
-      <!-- Start Footer -->
-
-      <p>© 2014 IBGS Research Group, Stephen Hasiotis</p>
-      <!-- Start of StatCounter Code -->
-      <script type="text/javascript">
-//<![CDATA[
-var sc_project=5729321; 
-var sc_invisible=1; 
-var sc_partition=64; 
-var sc_click_stat=1; 
-var sc_security="706f92a7"; 
-//]]>
-</script> <script type="text/javascript"
-     src="http://www.statcounter.com/counter/counter.js">
-</script><noscript>
-      <div class="statcounter">
-        <a title="joomla visitors"
-             href="http://www.statcounter.com/joomla/"
-             target="_blank"><img class="statcounter"
-             src="http://c.statcounter.com/5729321/0/706f92a7/1/"
-             alt="joomla visitors" /></a>
-      </div></noscript> <!-- End of StatCounter Code -->
-
-      <div id="breadcrumbcontainer">
-        <!-- Start the breadcrumb wrapper -->
-
-        <!--<ul>
-          <li><a href=
-          "../index.html">Videos</a>&nbsp;&gt;&nbsp;</li>
-
-          <li><a href="experiments.html">Tracemaking
-          Experiments</a>&nbsp;&gt;&nbsp;</li>
-        </ul>-->
-      </div><!-- End breadcrumb -->
-    </div><!-- End Footer -->
+      </div>
   </div><!-- End container -->
-<!-- Start of StatCounter Code -->
-<script type="text/javascript">
-var sc_project=7254315;
-var sc_invisible=1;
-var sc_security="97edd011";
-</script>
 
-<script type="text/javascript"
-src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
-class="statcounter"><a title="tumblr site counter"
-href="http://statcounter.com/tumblr/" target="_blank"><img
-class="statcounter"
-src="http://c.statcounter.com/7254315/0/97edd011/1/"
-alt="tumblr site counter" ></a></div></noscript>
-<!-- End of StatCounter Code -->
+
 
 </body>
 </html>

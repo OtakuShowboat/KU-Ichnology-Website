@@ -55,7 +55,7 @@ img {
 /* @group Layout */
 
 #container {
-	max-width: 100%
+	max-width: 100%;
 	text-align: justify;
 	position: relative;
 	z-index: 1;
@@ -71,6 +71,10 @@ img {
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
+}
+
+#content, #content .traces {
+	font-size: 14px;
 }
 
 .clearer {
