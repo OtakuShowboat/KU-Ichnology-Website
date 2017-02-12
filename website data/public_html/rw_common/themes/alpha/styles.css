@@ -55,6 +55,7 @@ img {
 /* @group Layout */
 
 #container {
+	max-width: 100%
 	text-align: justify;
 	position: relative;
 	z-index: 1;
@@ -180,7 +181,7 @@ img {
 
 #footer p {
 	margin: 0;
-	padding: 15px 15px 5px;
+	padding: 15px 15px 15px;
 }
 
 #footer a:link, #footer a:visited {
@@ -223,8 +224,8 @@ img {
 /* Toolbar Styles */
 
 #navcontainer {
-	border-bottom: 3px solid;
-	height: 30px;
+	background: black;
+	height: 40px;
 	position: relative;
 	z-index: 3;
 }
@@ -256,7 +257,7 @@ img {
 
 #navcontainer a {
 	display: block;
-	padding: 6px 15px 10px;
+	padding: 10px 15px 10px;
 	text-decoration: none;
 }
 
@@ -277,7 +278,7 @@ img {
 	display: none;
 	z-index: 6;
 	font-size: 0.9em;
-	width: 145px;
+	width: 160px;
 	padding: 0 10px;
 	visibility: visible;
 }
@@ -289,7 +290,7 @@ img {
 #navcontainer ul ul a {
 	padding: 5px 0;
 	display: block;
-	width: 110px;
+	width: 130px;
 }
 
 #navcontainer ul ul a:hover {
@@ -325,6 +326,7 @@ display:none;
 div#navcontainer ul li:hover ul, div#navcontainer ul ul li:hover ul, div#navcontainer ul ul ul li:hover ul, div#navcontainer ul ul ul ul li:hover ul, div#navcontainer ul ul ul ul ul li:hover ul{
 display:block;
 }
+
 /* @end */
 
 /* @group Global Classes */
