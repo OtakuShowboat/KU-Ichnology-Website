@@ -1,0 +1,12 @@
+#container,
+.photo-navigation {
+	width: 1100px;
+}
+
+#pageHeader #grad {
+	width: 810px;
+}
+
+blockquote, .standout {
+	width: 550px;
+}
