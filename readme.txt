@@ -37,4 +37,14 @@ Feb 9: HUGE update to the code. Every page now uses header.html and footer.html 
 
 Feb 10: Bugs in the trace fossil code have been squashed, as well as a couple errors on video pages. Added images for me and Matt Jones in About Us. Changed Alumni to degrees, rather than student types. All code-based fixes and edits are now on the live server. With that essentially all of my planned code changes are now complete.
 
-Feb 12: (1:00 am) Reduced video file size drastically (mainly due to GitHub file size restrictions) and uploaded to server. Site itself on the server is now only about 650 MB compared to 1.5 GB prior.
+Feb 12 (1:00 am): Reduced video file size drastically (mainly due to GitHub file size restrictions) and uploaded to server. Site itself on the server is now only about 650 MB compared to 1.5 GB prior.
+
+Feb 13 (evening): Drastically optimized performance scores of the website. Grade of 100 on
+Pingdom, GTmetrix scores 98% PageSpeed and 97% YSlow. Combined css
+styles, removing unused stylesheets in the process. Combined javascript
+and jQuery into one file. htaccess file exists (was empty file on
+server) and does massive work now. Removed all references to deleted css
+and js files from all page Head elements. Side note - found out that
+compressing files in a zip lets me upload all of them at once to the
+server in cPanel file manager. Sped up deployment time as I have no ftp
+access while off campus (due to the campus firewall).
