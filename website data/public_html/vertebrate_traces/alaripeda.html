@@ -29,38 +29,23 @@
 <script> 
 $(function(){
   $("#header").load("/header.html"); 
-  $("#footer").load("/footer.html"); 
+  $("#footer").load("/footer.html");
+  $("#sidenav").load("/sidenav.html"); 
 });
 </script>
-<script type="text/javascript"
-      charset="utf-8">
-//<![CDATA[
-                        var blankSrc = "/rw_common/themes/alpha/png/blank.gif";
-//]]>
-</script>
-<style type="text/css">
-/*<![CDATA[*/
 
-                img.pngfix {
-                        behavior:       url("/rw_common/themes/alpha/png/pngbehavior.htc");
-                }
 
-/*]]>*/
-</style>
 </head>
 
 <body>
-
-
 <div id="container">
     <!-- Start container -->
 
     <div id="header"></div>
-
     <div id="contentContainer">
       <!-- Start main content wrapper -->
-
-      <div id="content">
+		<div id="sidenav"></div>
+      <div class="contentTraces" id="content">
         <!-- Start content -->
         <span style=
         "font-size:15px; font-weight:bold;"><em>Alaripeda: </em>Sarjeant and Reynolds, 2001<br />

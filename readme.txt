@@ -14,6 +14,8 @@ About Us pages were out of date and not reflective of those people who had gradu
 Contact page was only linked through the home index page and not in the navbar.
 The vast majority of ichnogenera do not have pictures. Many have outdated or incorrect information.
 
+CHANGELOG:
+
 Jan 6, 2017:
 Gained access to the website files today through the C-Panel file manager
 Made backup through C-Panel of existing site - 1.75GB of 9.77 GB of space. Backup itself brings it closer to 3.5 of 10
@@ -39,12 +41,21 @@ Feb 10: Bugs in the trace fossil code have been squashed, as well as a couple er
 
 Feb 12 (1:00 am): Reduced video file size drastically (mainly due to GitHub file size restrictions) and uploaded to server. Site itself on the server is now only about 650 MB compared to 1.5 GB prior.
 
-Feb 13 (evening): Drastically optimized performance scores of the website. Grade of 100 on
-Pingdom, GTmetrix scores 98% PageSpeed and 97% YSlow. Combined css
-styles, removing unused stylesheets in the process. Combined javascript
-and jQuery into one file. htaccess file exists (was empty file on
-server) and does massive work now. Removed all references to deleted css
-and js files from all page Head elements. Side note - found out that
-compressing files in a zip lets me upload all of them at once to the
-server in cPanel file manager. Sped up deployment time as I have no ftp
-access while off campus (due to the campus firewall).
+Feb 13 (evening): Drastically optimized performance scores of the website. Grade of 100 on Pingdom, GTmetrix scores 98% PageSpeed and 97% YSlow. Combined css styles, removing unused stylesheets in the process. Combined javascript and jQuery into one file. htaccess file exists (was empty file on server) and does massive work now. Removed all references to deleted css and js files from all page Head elements. Side note - found out that compressing files in a zip lets me upload all of them at once to the server in cPanel file manager. Sped up deployment time as I have no ftp access while off campus (due to the campus firewall).
+
+Feb 15 (morning): 
+Scripts: Removed a lot of old code from the main javascript file. Big sections regarding flash and quicktime are gone now. "Althover.js" is removed. The code from althover is now under the jQuery library in javascript.js and is modified to all be in a single function that's called in header.html. This removes a console warning message about synchronous requests caused by the previous implementation of loading the althover.js script in the header file div tag rather than in a head tag. Adding the code to javascript.js meant not having to add the script to the head tag of every page on the site. Also deleted unused activex scripts and removed their references on the one page that used them (that I could find). 
+Removed the KU Website Efficiency Update.zip file from the dev environment. It'll still be used to do batch site updates later if needed. Footer.html now adds my name to the text string as the current website developer. Readme updated. 
+
+Feb 15 (Afternoon): 
+Links page now has all links open in a new tab by changing the links to rel="external" from rel="self". 
+Modified the navigation menu in preparation for further additions to the website: Trace Fossil list now the "important" spot next to the home page, About Us moved next to contact, and Current Research moved from being a child of About Us to its own parent and set between Principles of Ichnology and Videos. A longer term goal is to convert the navbar to javascript. 
+Alphabetized graduate student and alumni pages by last name. Fixed bug in javascript navbar highlighting code - navbar now highlights Trace Fossils when on all trace fossil pages.
+Trace Fossil pages now have a sidebar! The bar changes size with the content of the page and is the full link list of trace fossils from the main trace fossil page. This took 3 hours to get done properly, as I was having trouble figuring out the scaling thing (turns out I needed to set the bar to position: absolute and give the content a margin).
+
+To Do List:
+Traces: Font consistency between all pages
+Traces: Start adding / fixing the traces I have in my research
+New pages on Navajo Sandstone and Antarctica research
+Current Research Page: Likely going to get the same treatment as the Trace Fossil pages at some point, as the plan is to develop it into a whole new section of the website with public information related to ongoing research, as well as photos and presentations.
+Traces: Add pagination to navigate through traces? Back button on the pages that have single larger images?
