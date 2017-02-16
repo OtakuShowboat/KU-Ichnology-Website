@@ -53,6 +53,9 @@ Modified the navigation menu in preparation for further additions to the website
 Alphabetized graduate student and alumni pages by last name. Fixed bug in javascript navbar highlighting code - navbar now highlights Trace Fossils when on all trace fossil pages.
 Trace Fossil pages now have a sidebar! The bar changes size with the content of the page and is the full link list of trace fossils from the main trace fossil page. This took 3 hours to get done properly, as I was having trouble figuring out the scaling thing (turns out I needed to set the bar to position: absolute and give the content a margin).
 
+Feb 16:
+Put changes from past few days live on the server. Made the trace pages have a min-height so that the navigation menu doesn't get too small. Added a picture to fuscinapeda. Added Presbyorniformipes page with three images. Added links to new page to trace fossils page and sidebar.
+
 To Do List:
 Traces: Font consistency between all pages
 Traces: Start adding / fixing the traces I have in my research
