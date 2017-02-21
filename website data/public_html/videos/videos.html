@@ -1,16 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
   <meta http-equiv="content-type"
         content="text/html; charset=utf-8" />
   <meta name="robots"
         content="all" />
-  <meta name="generator"
-        content="RapidWeaver" />
-  <meta name="generatorversion"
-        content="3.6.7 (2691)" />
 
   <title>Videos and Animations</title>
   <link rel="stylesheet"
@@ -29,6 +22,7 @@
 $(function(){
   $("#header").load("/header.html"); 
   $("#footer").load("/footer.html"); 
+  $("#experimentnav").load("/experimentsidebar.html");
 });
 </script>
 </head>
@@ -40,8 +34,9 @@ $(function(){
 
     <div id="contentContainer">
       <!-- Start main content wrapper -->
+	<div id="experimentnav"></div>
 
-      <div id="content">
+      <div class="contentTraces" id="content">
         <!-- Start content -->
         <span style=
         "font-size:17px; font-weight:bold;">Videos and Animations</span><span style="font-size:17px;"><br />
@@ -59,34 +54,7 @@ $(function(){
         new videos are added.
         <br />
         <br />
-        </span><span style="font-size:14px; font-weight:bold;"><a href="/videos/lectures.html"
-           rel="self"
-           title="Trace Fossil Lectures">Trace Fossil Lectures</a>
-           
-        </span><span style="font-size:14px;"><br />
-        <br /></span><span style=
-        "font-size:14px; font-weight:bold;"><a href="/videos/inthewild.html"
-           rel="self"
-           title="Tracemakers in the Wild">Tracemakers in the
-           Wild</a>
-           
-        </span><span style="font-size:14px;"><br />
-        <br /></span><span style=
-        "font-size:14px; font-weight:bold;"><a href="/videos/experiments.html"
-           rel="self"
-           title="Tracemaking Experiments">
-           Tracemaking Experiments</a>
-           
-        </span><span style="font-size:14px;"><br />
-        <br /></span><span style=
-        "font-size:14px; font-weight:bold;"><a href="/videos/animations.html"
-           rel="self"
-           title="Animations and 3D Anaglyphs">Animations and 
-          Anaglyphs</a>
-           
-        <br /></span><span style="font-size:14px;"><br />
 
-        <br /></span>
       </div><!-- End content -->
     </div><!-- End main content wrapper -->
 

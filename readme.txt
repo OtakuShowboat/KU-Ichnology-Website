@@ -56,9 +56,19 @@ Trace Fossil pages now have a sidebar! The bar changes size with the content of 
 Feb 16:
 Put changes from past few days live on the server. Made the trace pages have a min-height so that the navigation menu doesn't get too small. Added a picture to fuscinapeda. Added Presbyorniformipes page with three images. Added links to new page to trace fossils page and sidebar.
 
-To Do List:
-Traces: Font consistency between all pages
-Traces: Start adding / fixing the traces I have in my research
-New pages on Navajo Sandstone and Antarctica research
-Current Research Page: Likely going to get the same treatment as the Trace Fossil pages at some point, as the plan is to develop it into a whole new section of the website with public information related to ongoing research, as well as photos and presentations.
-Traces: Add pagination to navigate through traces? Back button on the pages that have single larger images?
+Feb 17:
+Added 20 chicken (and mourning dove) videos to experiments section with 20 new pages and experiments page navigation, though not added to main navigation menu. 
+Re-ordered the experiments page list. 
+Added tentative navigation to experiment videos - will likely incorporate ALL video pages instead of having a double-dropdown list in main navigation.
+Tentative gallery for images on trace fossil pages.
+"Professional Development" time - spent several hours messing around with different image galleries until I found a combination of scipts I like. I combined lightslider and lightbox to have a scrolling gallery which lets you click the images to make them larger. You know, image "slideshows" that incorporate a form of lightbox on image click are rare and difficult to get working correctly due to poor documentation. Cleaned up the code mess I made and optimized the code. On the downside, this code must be added manually to all trace fossil pages with images. Very low on the priority list.
+
+Feb 20:
+Added Glaciichnium page to invert traces with 4 pictures with the new gallery applied.
+Applied gallery to Anatapeda bird trace page (it was the page I used for initial testing).
+Edited Cochlichnus page to add 2 images, updated information, and applied the new gallery to images.
+Added images to Treptichnus page and applied new gallery.
+Slow death to xhtml and Rapidweaver meta tags has begun. Removing the top doctype info for updated trace pages as a reminder that those pages have been updated.
+Videos is now a "section" with a sidebar and no main navigation dropdown. "experiments" page was removed to due its function being replaced by the side navigation. Lectures, Ants in the Wild, and all animations and anaglyphs added to the sidebar. Highlighting script for the main navigation has been updated. Entire section of highlighting scripts will change as the focus shifts away from main navigation dropdowns and towards sidebars.
+Added trace fossil sidebar to Trace Fossil page and removed the links that were on the page.
+Added a bunch of graduates to the Alumni page.
