@@ -30,7 +30,7 @@ b, strong {
 a:link, a:visited {
 }
 
-a:hover, a:active {
+a, a:hover, a:active {
 	text-decoration: none;
 }
 
