@@ -1,3 +1,9 @@
+# Prevent Apache from serving .htaccess files:
+<FilesMatch "^\.htaccess">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
   AddOutputFilterByType DEFLATE application/javascript
@@ -30,10 +36,16 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-  <FilesMatch ".(js|css|xml|gz|html|jpg)$">
+  <FilesMatch ".(js|css|xml|gz|jpg|jpeg)$">
     Header append Vary: Accept-Encoding
-	Header append Cache-Control "max-age=604800, public"
+	Header append Cache-Control "no-cache, must-revalidate"
   </FilesMatch>
+  <FilesMatch ".(html|htm|php)$">
+	Header append Expires "Mon, 26 Jul 1997 05:00:00 GMT"
+	Header append Cache-Control "no-store, no-cache, must-revalidate"
+	Header append Cache-Control "post-check=0, pre-check=0"
+	Header append Pragma "no-cache"
+	</FilesMatch>
 </IfModule>
 
 <FilesMatch ".(js|css)$">
