@@ -72,3 +72,19 @@ Slow death to xhtml and Rapidweaver meta tags has begun. Removing the top doctyp
 Videos is now a "section" with a sidebar and no main navigation dropdown. "experiments" page was removed to due its function being replaced by the side navigation. Lectures, Ants in the Wild, and all animations and anaglyphs added to the sidebar. Highlighting script for the main navigation has been updated. Entire section of highlighting scripts will change as the focus shifts away from main navigation dropdowns and towards sidebars.
 Added trace fossil sidebar to Trace Fossil page and removed the links that were on the page.
 Added a bunch of graduates to the Alumni page.
+
+Feb 21:
+More alumni page updates
+Results page upon contact submission has been updated.
+htaccess file updated to stop all caching and force not using the cache. Will be re-enabled once the site done updating.
+
+Feb 25:
+Added information sent to me for students. 
+Updated the Publications page with information from your CV.
+Publications page is moved to this section under your name, as it is a list of all of your Major Publications and Major Presentations.
+About Us is now a section with a sidebar. 
+Each student has their own page. 
+Removed dropdown items from About Us navigation. Functionality is now in the sidebar.
+Navigation highlighting script updated for new About section.
+I have updated the caching rules for the site, though javascript and css stylesheet changes will require cache deletion to take affect. I will add a system to every page for development that will force browsers to get the files again every time you load the page so that you hopefully do not have to clear the cache when those two files are updated on Monday.
+In preparation for updates to the Current Research section, I have moved the Current Research page into its own folder and adjusted navigation accordingly.

@@ -74,14 +74,18 @@ if(window.location.pathname == "/") //Checks if the path is empty (i.e. you are 
 //Trace Fossil page highlighting. An alternative is to move EVERY TRACE PAGE into a "trace fossils" folder and then change every single link to them everywhere - not a good idea. But, if someone in the future DOES do that, well, this section's a bit worthless at that point.
 var traceLink = document.getElementById("tracepage");
 var videoLink = document.getElementById("videopage");
+var aboutLink = document.getElementById("aboutpage");
 var urlArray = window.location.pathname.split("/")
 
 for (var i = 0, l = urlArray.length; i < l; i++) {
 if( urlArray[i] == "invertebrate_traces" || urlArray[i] == "vertebrate_traces") {
-	traceLink.className += "current";
+	traceLink.className += "current ";
 }
 if( urlArray[i] == "videos" ) {
-	videoLink.className += "current";
+	videoLink.className += "current ";
+}
+if( urlArray[i] == "aboutus" ) {;
+	aboutLink.className += "current ";
 }
 }
 	

@@ -1204,7 +1204,7 @@ blockquote, .standout {
 	overflow-y:scroll;
 }
 
-.contentTraces {
+.contentTraces, .contentAbout {
 	margin-left: 200px;
 	min-height: 600px;
 }
