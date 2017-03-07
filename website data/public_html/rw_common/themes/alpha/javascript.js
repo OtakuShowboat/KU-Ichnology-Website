@@ -60,21 +60,21 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 //Not the most elegant of code, but it gets the job done. The below is what highlights the navbar text for the current page.
 
-//In detail, the below code sets a class of "current" to the link on the navbar for the current page and up to two parents (e.g. if on the Ants Scraping video page, the Videos, Tracemaking Experiments, and Ants Scraping link list elements will have a class of "current" and get highlighted by styles.css, currently set to White (#FFFFFF). Code originally from a separate blog hosting site displayed publically to use for this purpose. I have modified the original code to add a second parent level check, as well as added the homepage root path check so that "KU Ichnology" is highlighted when first entering the site.
-
 function highlightNav() {
-//Homepage Path Check
+
+//Highlights home page
 var homeLink = document.getElementById("homepage");
-if(window.location.pathname == "/") //Checks if the path is empty (i.e. you are on the home URL: ichnology.ku.edu and not on another page such as ichnology.ku.edu/tracefossils.html).
+if(window.location.pathname == "/") 
 	{
 		homeLink.className += "current";
 	};
 
 
-//Trace Fossil page highlighting. An alternative is to move EVERY TRACE PAGE into a "trace fossils" folder and then change every single link to them everywhere - not a good idea. But, if someone in the future DOES do that, well, this section's a bit worthless at that point.
+//Top navigation highlighting for side navigation pages
 var traceLink = document.getElementById("tracepage");
 var videoLink = document.getElementById("videopage");
 var aboutLink = document.getElementById("aboutpage");
+var researchLink = document.getElementById("researchpage");
 var urlArray = window.location.pathname.split("/")
 
 for (var i = 0, l = urlArray.length; i < l; i++) {
@@ -84,15 +84,18 @@ if( urlArray[i] == "invertebrate_traces" || urlArray[i] == "vertebrate_traces") 
 if( urlArray[i] == "videos" ) {
 	videoLink.className += "current ";
 }
-if( urlArray[i] == "aboutus" ) {;
+if( urlArray[i] == "aboutus" ) {
 	aboutLink.className += "current ";
 }
+if( urlArray[i] == "current_research") {
+	researchLink.className += "current ";
+	}
 }
 	
  //Navigation highlighting	
  function setActiveLink(currentUrl) {
   var activeClass = 'current';
-  var navLinks = document.querySelectorAll('#navcontainer a'); //all links inside the nav
+  var navLinks = document.querySelectorAll('#menu a'); //all links inside the nav
   for (var i = 0, l = navLinks.length; i < l; i++) {
    var link = navLinks[i];
    var url = link.getAttribute('href');
@@ -229,7 +232,7 @@ $(document).ready(function() {
         vThumbWidth:100,
  
         thumbItem:10,
-        pager: true,
+        pager: false,
         gallery: false,
         galleryMargin: 5,
         thumbMargin: 5,
@@ -250,3 +253,47 @@ $(document).ready(function() {
         onBeforePrevSlide: function (el) {}
     });
 });
+
+
+function scrollNav() {
+function setScroll(currentUrl) {
+  var scrollClass = 'scrollToMe';
+  var navLinks = document.querySelectorAll('#mySidenav a'); //all links inside the sidenav
+  for (var i = 0, l = navLinks.length; i < l; i++) {
+	var link = navLinks[i];
+	var url = link.getAttribute('href');	
+   if(currentUrl == url) {
+    if (link.classList) {
+     link.classList.add(scrollClass);
+
+    } else {
+     link.className += ' ' + scrollClass;
+		
+    }
+	var container = document.querySelector('#mySidenav');
+	var rowToScrollTo = document.querySelector('.scrollToMe');
+	container.scrollTop = rowToScrollTo.offsetTop;
+   }
+   
+  }
+ }
+ 
+function ready(fn) {
+  if (document.readyState != 'loading') {
+   fn();
+  } else {
+   document.addEventListener('DOMContentLoaded', fn);
+  }
+ }
+ 
+
+ 
+function runApplication() {
+  //console.log(window.location.pathname);
+  setScroll(window.location.pathname + window.location.hash);
+ }
+ ready(runApplication);
+};
+
+
+

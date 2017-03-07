@@ -88,3 +88,31 @@ Removed dropdown items from About Us navigation. Functionality is now in the sid
 Navigation highlighting script updated for new About section.
 I have updated the caching rules for the site, though javascript and css stylesheet changes will require cache deletion to take affect. I will add a system to every page for development that will force browsers to get the files again every time you load the page so that you hopefully do not have to clear the cache when those two files are updated on Monday.
 In preparation for updates to the Current Research section, I have moved the Current Research page into its own folder and adjusted navigation accordingly.
+
+Feb 28:
+Added gallery to invertebrates
+Vagorichnus had a page that wasn't ever linked on the old trace fossil list, despite having an entry. Updated the sidebar so it is linked.
+
+March 4:
+Added image to Protichnites, modified from a photo of a slab from the Yale Peabody Museum
+Fixed student Thesis/Dissertation labels for M.S. vs Ph.D. students.
+Added Thesis title to Falk, updated/corrected Dissertation title.
+Added/Correct Thesis titles and graduation years for many other students, found via KUScholarWorks.
+Added/Updated Publications for students from Hasiotis Publications page.
+RHIZOLITHS: 8 moved to rhizocretion, 9+10 moved to rhizotubules, 13 moved to tubules and concretions, 14 moved to tubules, 15 moved to rhizocretion, Rotated 27 90degrees and moved to rhizocretion, moved 28 to Chondrites, 30 moved to rhizocretion, 31+32 moved to rhizohaloes, 23 fixed
+Archaeo: 13 rotated 90
+Helminthopsis image moved to phycosiphon
+
+March 5 - Professional Development:
+Side navigation bar "remembers" its position and active page link is bold.
+New navigation bar styling. It looks nicer now.
+1st pass cleanup of styles.css.
+Death to gallery dots.
+
+March 6:
+Pushed recent changes to server.
+Added gallery code to all vertebrate pages.
+Cleaned up code on all pages (removed rapidweaver metatags, moved to html5 Doctype rather than XHTML.
+Current Research now a section with individual research pages for later photo and slideshow additions.
+Animations and Anaglyphs page is now separated into an Animations page and Anaglyphs page.
+Pushed today's changes to server.
