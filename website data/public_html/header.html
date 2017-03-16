@@ -1,18 +1,39 @@
 <div id="pageHeader">
       <!-- Start page header -->
-      <h1>KU Ichnology</h1>
-      <h2>Studying the Traces of Life</h2><img src="/websizeimages/image1c.jpg" />   
+		<div class="main-container">
+		<div class="fixer-container">
+		<span>
+		<h1>KU Ichnology<h1>
+		<h3>Studying the Traces of Life</h3>
+		</span>
+		</div>
+		</div>
+		<div class="main-container">
+		<div class="fixer-container">
+		<img src="/websizeimages/image1c.jpg" class="img-responsive" />  
+		</div>
+		</div>
       </div>  
     <!-- End page header -->
 
-    <nav id="menu-wrap">
-      <!-- Start Navigation -->
-
-      <ul id="menu">
+    <nav class="navbar navbar-inverse navbar-static-top">
+    <!-- Start Navigation -->
+	<div class="container-fluid">
+	<!-- Brand and toggle get grouped for better mobile display -->
+      
 		<!--Home Page /-->
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+		</button>
+		<a  class="navbar-brand" id="homepage" href="/">KU&nbsp;Ichnology</a>
+		</div>
 		
-        <li><a href="/" id="homepage" rel="self">KU&nbsp;Ichnology</a></li> 
-
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul id="navigation" class="nav navbar-nav">
 		<!--Trace Fossils /-->
 		
         <li>
@@ -21,12 +42,13 @@
 		
 		<!--Principles of Ichnology /-->
 		
-        <li>
-          <a href="/poi/poi.html" rel="self">Principles&nbsp;of&nbsp;Ichnology</a>
-			<ul>
+        <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Concepts<span class="caret"></span></a>
+			<ul class="dropdown-menu inverse-dropdown">
+			<li><a href="/poi/poi.html" rel="self">Principles of Ichnology</a></li>
             <li><a href="/poi/poi/introduction.html" rel="self">Introduction&nbsp;to&nbsp;Ichnology</a></li>
-            <li><a href="/poi/poi/glossary.html" rel="self">Glossary</a></li>
             <li><a href="/poi/poi/models.html" rel="self">Ichnofacies&nbsp;Models</a></li>
+			<li><a href="/poi/poi/glossary.html" rel="self">Glossary</a></li>
 			</ul>         
         </li>
 		
@@ -40,10 +62,12 @@
 			
 		<!--References /-->
 		
-        <li><a href="/references/references.html" rel="self">References</a>
-			<ul>
-			<li><a href="/references/references/bibliography.html" rel="self">Bibliography</a>
-              <ul>
+        <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Citations<span class="caret"></span></a>
+		
+			<ul class="dropdown-menu inverse-dropdown">
+				<li><a href="/references/references.html" rel="self">References</a>
+				<li><a href="/references/references/bibliography.html" rel="self">Bibliography</a>
                 <li><a href="/references/references/bibliography/ant_nests_refs.html" rel="self">Ant&nbsp;Nests</a></li>
                 <li><a href="/references/references/bibliography/crab_burrows_refs.html" rel="self">Crab&nbsp;Burrows</a></li>                    
                 <li><a href="/references/references/bibliography/crayfish_burrows_refs.html" rel="self">Crayfish&nbsp;Burrows</a></li>                     
@@ -56,7 +80,6 @@
                 <li><a href="/references/references/bibliography/termite_nests_refs.html" rel="self">Termite&nbsp;Nests</a></li>
                 <li><a href="/references/references/bibliography/vertebrate_trackways_refs.html" rel="self">Vertebrate&nbsp;Trackways</a></li>                     
                 <li><a href="/references/references/bibliography/wasp_and_bee_nests_refs.html" rel="self">Wasp&nbsp;and&nbsp;Bee&nbsp;Nests</a></li>  
-              </ul>
 			  </li>
 			<li><a href="/links/page3.html" rel="self">Further Reading</a></li>
 			</ul>
@@ -76,6 +99,8 @@
 		<li><a href="/contact_us.html" rel="self">Contact&nbsp;Us</a></li>
 		
       </ul>
+	</div>
+	</div>
     </nav><!-- End navigation -->
 	<script>
 	  highlightNav();

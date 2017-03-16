@@ -2,33 +2,40 @@
 
 <html>
 <head>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=YAK2Aayvv0">
-<link rel="icon" type="image/png" href="/favicon-32x32.png?v=YAK2Aayvv0" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-16x16.png?v=YAK2Aayvv0" sizes="16x16">
-<link rel="manifest" href="/manifest.json?v=YAK2Aayvv0">
-<link rel="mask-icon" href="/safari-pinned-tab.svg?v=YAK2Aayvv0" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon.ico?v=YAK2Aayvv0">
-<meta name="theme-color" content="#ffffff">
-
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="robots" content="all" />
-
-<title>Bat Behaviors</title>
-  <link rel="stylesheet"
-        type="text/css"
-        media="screen"
-        href="/rw_common/themes/alpha/styles.css" />
-        <!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/alpha/ie6.css"  /><![endif]-->
-
-        <!--[if IE 6]><style type="text/css" media="screen">body {behavior: url(/rw_common/themes/alpha/csshover.htc);}</style><![endif]-->
-
- <!--<link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/alpha/html5lightbox/html5lightbox.css" />  -->
-<script type="text/javascript" src="/rw_common/themes/alpha/javascript.js"></script>
-<script src="/rw_common/themes/alpha/html5lightbox/html5lightbox.js"></script>
-
-
-<script> 
-$(function(){
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=YAK2Aayvv0">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png?v=YAK2Aayvv0" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png?v=YAK2Aayvv0" sizes="16x16">
+	<link rel="manifest" href="/manifest.json?v=YAK2Aayvv0">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=YAK2Aayvv0" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicon.ico?v=YAK2Aayvv0">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="robots" content="all" />
+    <title>KU Ichnology</title>
+	
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/alpha/styles.css" />
+	<!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/alpha/ie6.css"  /><![endif]-->
+    <!--[if IE 6]><style type="text/css" media="screen">body {behavior: url/rw_common/themes/alpha/csshover.htc;}</style><![endif]-->
+    
+	<link href="/rw_common/themes/alpha/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="/rw_common/themes/alpha/lightgallery/css/lightgallery.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/rw_common/themes/alpha/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/javascript.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lightgallery.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-video.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-thumbnail.js"></script>
+	<script> 
+	$(function(){
   $("#header").load("/header.html"); 
   $("#footer").load("/footer.html"); 
   $("#experimentnav").load("/experimentsidebar.html");
@@ -47,10 +54,91 @@ $(function(){
     
     <div id="contentContainer">
       <!-- Start main content wrapper -->
-		<div id="experimentnav"></div>
+		
 		
       <div class="contentTraces" id="content">
 	
+<!-- Hidden video div -->
+<div style="display:none;" id="video1">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/bat_trackmaking_1.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video2">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/bat_trackmaking_2.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video3">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv8-carollia Perspicillata Searching.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video4">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv7-carollia Perspicillata Hop.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video5">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv6-carollia Perspicillata One-armed Crawl.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video6">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv4-carollia Perspicillata Breastrokelike.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video7">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv3-carollia Perspicillata Diagonal Sequence Walk.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video8">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv5-dermanura Phaeotis Breaststrokelike.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video9">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv2-desmodus Rotundus Diagonal Sequence Walk.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video10">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv1-desmodus Rotundus Bounding.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video11">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv4-hylonycteris Underwoodi Breaststrokelike.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video12">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv6-lonchorhina Aurita Searching.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video13">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/Sv5-saccopteryx Bilineata Searching.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+ 
+<!-- data-src should not be provided when you use html5 videos -->
 
         <!-- Start content -->
         <span style="font-size:15px; font-weight:bold;">Bat Bahaviors</span>
@@ -58,15 +146,77 @@ $(function(){
         <br />
         UNDER CONSTRUCTION<br />
         <br />
-		<a href="/videos/experiments/Sv6-lonchorhina Aurita Searching.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Lonchorhina aurita</em> searching</a><br />
-		<a href="/videos/experiments/Sv5-saccopteryx Bilineata Searching.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Saccopteryx bilineata</em> Searching</a><br />
-		<a href="/videos/experiments/Sv4-hylonycteris Underwoodi Breaststrokelike.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Hylonycteris</em> underwoodi Breaststrokelike</a><br />
-		<a href="/videos/experiments/Sv2-desmodus Rotundus Diagonal Sequence Walk.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Desmodus rotundus</em> Diagonal Sequence Walk</a><br />
-		<a href="/videos/experiments/Sv1-desmodus Rotundus Bounding.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Desmodus rotundus</em> Bounding</a><br />
+		<ul id="html5-videos">
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="Bat Trackmaking 1" data-html="#video1" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="Bat Trackmaking 2" data-html="#video2" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Carollia perspicillata</em> Searching" data-html="#video3" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Carollia perspicillata</em> Hoping" data-html="#video4" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Carollia perspicillata</em> One-armed Crawl</a>" data-html="#video5" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Carollia perspicillata</em> Breastrokelike</a>" data-html="#video6" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Carollia perspicillata</em> Diagonal Sequence Walk" data-html="#video7" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Dermanura phaeotis</em> Breaststrokelike" data-html="#video8" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Desmodus rotundus</em> Diagonal Sequence Walk" data-html="#video9" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Desmodus rotundus</em> Bounding" data-html="#video10" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Hylonycteris</em> underwoodi Breaststrokelike" data-html="#video11" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Lonchorhina aurita</em> searching" data-html="#video12" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+			<li data-poster="/thumbnails/FIG326tn.jpg" data-sub-html="<em>Saccopteryx bilineata</em> Searching" data-html="#video13" >
+				<img src="/thumbnails/FIG326tn.jpg" width="200px"/>
+			</li>
+		</ul>
+		
+		<!--
 		<a href="/videos/experiments/bat_trackmaking_1.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720">Bat Trackmaking 1</a><br />
+		
 		<a href="/videos/experiments/bat_trackmaking_2.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720">Bat Trackmaking 2</a><br />
 		
+		<a href="/videos/experiments/Sv8-carollia Perspicillata Searching.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Carollia perspicillata</em> Searching</a><br />
+		
+		<a href="/videos/experiments/Sv7-carollia Perspicillata Hop.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Carollia perspicillata</em> Hoping</a><br />
+		
+		<a href="/videos/experiments/Sv6-carollia Perspicillata One-armed Crawl.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Carollia perspicillata</em> One-armed Crawl</a><br />
+		
+		<a href="/videos/experiments/Sv4-carollia Perspicillata Breastrokelike.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Carollia perspicillata</em> Breastrokelike</a><br />
+		
+		<a href="/videos/experiments/Sv3-carollia Perspicillata Diagonal Sequence Walk.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Carollia perspicillata</em> Diagonal Sequence Walk</a><br />
+		
+		<a href="/videos/experiments/Sv5-dermanura Phaeotis Breaststrokelike.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Dermanura phaeotis</em> Breaststrokelike</a><br />
+		
+		<a href="/videos/experiments/Sv2-desmodus Rotundus Diagonal Sequence Walk.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Desmodus rotundus</em> Diagonal Sequence Walk</a><br />
+		
+		<a href="/videos/experiments/Sv1-desmodus Rotundus Bounding.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Desmodus rotundus</em> Bounding</a><br />
+		
+		<a href="/videos/experiments/Sv4-hylonycteris Underwoodi Breaststrokelike.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Hylonycteris</em> underwoodi Breaststrokelike</a><br />
+		
+		<a href="/videos/experiments/Sv6-lonchorhina Aurita Searching.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Lonchorhina aurita</em> searching</a><br />
+		
+		<a href="/videos/experiments/Sv5-saccopteryx Bilineata Searching.mp4" class="html5lightbox" data-group="bats" data-width="1280" data-height="720"><em>Saccopteryx bilineata</em> Searching</a><br />
+		/-->
       </div><!-- End content -->
+	  <div id="experimentnav"></div>
     </div><!-- End main content wrapper -->
 	
 
