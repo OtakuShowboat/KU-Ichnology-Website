@@ -116,3 +116,29 @@ Cleaned up code on all pages (removed rapidweaver metatags, moved to html5 Docty
 Current Research now a section with individual research pages for later photo and slideshow additions.
 Animations and Anaglyphs page is now separated into an Animations page and Anaglyphs page.
 Pushed today's changes to server.
+
+March 9:
+Fixed empty picture dimensions in gallery code on some pages - this caused some goofy behavior instead of always displaying the full-sized images.
+Favicons! Lots and lots of favicons! Code added to head of every page.
+Picture additions from emails
+Implemented a simple "gallery" for videos on a couple video pages (Stingrays and Bats). I'm thinking of a way to have multiple videos displayed on a single page with the information about them, rather than having one video per page with several links in the sidebar. We could have pages for each Class (Arachnida, Aves, Chondrichthyes, etc.) and have a list of videos in separate galleries per animal type, for instance. This is tentative and will most likely change.
+
+March 10:
+Google Analytics tracking added to site using php include on web pages. Required adding a handler to .htaccess file.
+
+March 11:
+Fixed Google Analytics tracking code issue. PHP's a butt. Needed to write:
+<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/url.php") ?> 
+instead of 
+<?php include_once("/url.php") ?>
+
+Added Bootstrap, a powerful framework which will drastically help with making the site mobile-friendly.
+Using Bootstrap, figured out main navigation and modified the header. Navbar is new but made it to look similar to the previous code. Got the dropdown transitions in, too.
+Re-coded the sidebars (mostly) to be unordered lists.
+
+March 13:
+Perfected the navigation bar and header transitions with screen size. Removed the gradients from main navigation.
+Added videos to bats
+
+March 16:
+lightGallery works, so updated trace pages to use it as well as started working on using it for video pages.
