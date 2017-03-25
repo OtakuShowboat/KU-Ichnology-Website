@@ -30,6 +30,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/rw_common/themes/alpha/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/javascript.js"></script>
+	<link href="/rw_common/themes/alpha/lightgallery/css/lightgallery.css" rel="stylesheet" />
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lightgallery.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-video.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-thumbnail.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/autoplay.js"></script>
 	<script> 
 	$(function(){
   $("#header").load("/header.html"); 
@@ -41,18 +46,183 @@
 
 </head>
 
-<body>
+<body class="container-fluid">
 <div id="container">
 
 
   <div id="header"></div>
 
-    <div id="contentContainer">
+    <div class="row content">
       <!-- Start main content wrapper -->
 		<div id="experimentnav"></div>
 
-      <div class="contentTraces" id="content">
+      <div class="col-sm-9 text-left">
         <!-- Start content -->
+		
+		<!-- New Video Code /Need to add thumbnails prior to going live 
+		<div style="display:none;" id="video1">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_breakthrough.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video2">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_carrying.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video3">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_cutting.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video4">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_pulling.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video5">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_pushing.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video6">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_sawing.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video7">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_scraping.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video8">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_transporting.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video9">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_tunneling.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video10">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/ants_upward_excavation.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+
+		
+		<div style="display:none;" id="video12">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/beetle_grub_burrowing.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<div style="display:none;" id="video13">
+			<video class="lg-video-object lg-html5" controls preload="none">
+				<source src="/videos/experiments/Cicada Footage 1.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		
+		<ul id="html5-videos">
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Breaking Through<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video1" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Carrying<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video2" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Cutting<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video3" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Pulling<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video4" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Pushing<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video5" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Sawing<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video6" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Scraping<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video7" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Transporting<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video8" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Tunneling<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video9" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants Upward Excavation<br />For details of experiment, see Halfen, A.F., and Hasiotis, S.T., 2010,	
+Neoichnological study of the traces and burrowing behaviors of the western harvester ant <em>Pogonomyrmex occidentalis</em> (Insecta, Hymenoptera, Formicidae); paleopedogenic and paleoecological implications
+PALAIOS, 25(11):703-720" data-html="#video10" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Ants in the Wild<br />This video demonstrates the
+        complex morphology of ant nests, and explains the various
+        uses for the tunnels and chambers." data-src="http://www.youtube.com/watch?v=g7VhvoMFn34" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Beetle Grub Burrowing<br />For details of experiment, see Counts, J.W., and Hasiotis, S. T., 2009. Neoichnological experiments documenting burrowing behaviors and traces of the masked chafer beetle (Coleoptera: Scarabaeidae: Cyclocephala sp.): Behavioral significance of extant soil-dwelling insects to understanding backfilled trace fossils in the continental realm. PALAIOS, v. 24, p. 75-92." data-html="#video12" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+			<li data-poster="/thumbnails/antspush.png" data-sub-html="Cicada Nymph Burrowing<br />For details of experiment, see Smith, J.J., and Hasiotis, S. T., 2008. Traces and burrowing behaviors of the cicada nymph Cicadetta calliope: Neoichnology and paleoecological significance of extant soil-dwelling insects. PALAIOS, v. 23, p. 503-513." data-html="#video13" >
+				<img src="/thumbnails/antspush.png" height="200px" width="300px"/>
+			</li>
+			
+		</ul>
+		-->
+
         <span style="font-size:15px; font-weight:bold;">Ants
         Pushing</span>
         <br />

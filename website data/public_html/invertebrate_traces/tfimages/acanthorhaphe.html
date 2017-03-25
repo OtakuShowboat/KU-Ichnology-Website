@@ -16,10 +16,9 @@
     <title>KU Ichnology</title>
 	
     <!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/alpha/styles.css" />
 	<!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/alpha/ie6.css"  /><![endif]-->
     <!--[if IE 6]><style type="text/css" media="screen">body {behavior: url/rw_common/themes/alpha/csshover.htc;}</style><![endif]-->
-    
+    <link href="/rw_common/themes/alpha/styles.css" rel="stylesheet">
 	<link href="/rw_common/themes/alpha/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,19 +43,18 @@
 
 </head>
 
-<body>
+<body class="container-fluid">
 
-
-  <div id="container">
+<div id="header" ></div>
     <!-- Start container -->
 
-    <div id="header"></div>
+    
 
-    <div id="contentContainer">
+    <div class="row content">
       <!-- Start main content wrapper -->
 		<div id="sidenav"></div>
 
-      <div class="contentTraces" id="content">
+      <div class="col-sm-9 text-left">
         <!-- Start content -->
         <span style=
         "font-size:15px; font-weight:bold;"><em>Acanthorhaphe: </em>Książkiewicz, 1970<br />
@@ -103,12 +101,7 @@
       <!-- End content -->
     </div><!-- End main content wrapper -->
 
-    <div class="clearer"></div>
-
-    <div id="footer">
-      </div>
-  </div><!-- End container -->
-
+<div id="footer"></div>
 
 <!-- Start of StatCounter Code for Default Guide -->
 <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/analyticstracking.php") ?>

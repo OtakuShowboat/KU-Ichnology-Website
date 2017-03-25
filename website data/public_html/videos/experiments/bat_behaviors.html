@@ -34,6 +34,7 @@
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lightgallery.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-video.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-thumbnail.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/autoplay.js"></script>
 	<script> 
 	$(function(){
   $("#header").load("/header.html"); 
@@ -45,19 +46,19 @@
 
 </head>
 
-<body>
+<body class="container-fluid">
 <div id="container">
 
 
   <div id="header"></div>
 <!-- Hidden video div -->
     
-    <div id="contentContainer">
+    <div class="row content">
       <!-- Start main content wrapper -->
 		
 		
-      <div class="contentTraces" id="content">
-	
+      <div class="col-sm-9 text-left">
+	<div id="experimentnav"></div>
 <!-- Hidden video div -->
 <div style="display:none;" id="video1">
     <video class="lg-video-object lg-html5" controls preload="none">
@@ -216,7 +217,7 @@
 		<a href="/videos/experiments/Sv5-saccopteryx Bilineata Searching.mp4" class="html5lightbox" data-group="bats" data-height="1280" data-height="720"><em>Saccopteryx bilineata</em> Searching</a><br />
 		/-->
       </div><!-- End content -->
-	  <div id="experimentnav"></div>
+	  
     </div><!-- End main content wrapper -->
 	
 

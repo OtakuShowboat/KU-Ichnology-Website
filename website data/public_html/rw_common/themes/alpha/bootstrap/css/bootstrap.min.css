@@ -176,3 +176,14 @@ border-bottom-color: #fafafa;
     max-height: 500px;
     opacity: 1;
 }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px; /* or 950px */
+}
+
+.col-sm-9 {
+	min-height: 400px;
+}
+
