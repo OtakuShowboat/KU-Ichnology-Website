@@ -34,7 +34,6 @@
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lightgallery.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-video.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-thumbnail.js"></script>
-	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/autoplay.js"></script>
 	<script> 
 	$(function(){
   $("#header").load("/header.html"); 
@@ -56,10 +55,11 @@
     <div class="row content">
       <!-- Start main content wrapper -->
 		
-		
+		<div id="experimentnav"></div>
       <div class="col-sm-9 text-left">
-	<div id="experimentnav"></div>
+	
 <!-- Hidden video div -->
+<!-- Bats -->
 <div style="display:none;" id="video1">
     <video class="lg-video-object lg-html5" controls preload="none">
         <source src="/videos/experiments/bat_trackmaking_1.mp4" type="video/mp4">
@@ -138,54 +138,116 @@
          Your browser does not support HTML5 video.
     </video>
 </div>
+
+<!-- Elephants -->
+<div style="display:none;" id="video14">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/elephant_trackmaking_1.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+
+<div style="display:none;" id="video15">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/elephant_trackmaking_2.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+
+<div style="display:none;" id="video16">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/elephant_trackmaking_3.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+
+<div style="display:none;" id="video17">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/elephant_trackmaking_4.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+
+<div style="display:none;" id="video18">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="/videos/experiments/elephant_trackmaking_5.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
  
 <!-- data-src should not be provided when you use html5 videos -->
 
+		<h3><strong>Mammalian Behaviors</strong></h3>
+		<p>Click or tap an image below to access the video gallery.<p>
+
         <!-- Start content -->
-        <span style="font-size:15px; font-weight:bold;">Bat Bahaviors</span>
-        <br />
-        <br />
-        UNDER CONSTRUCTION<br />
-        <br />
+
 		<ul id="html5-videos">
-			<li data-poster="/thumbnails/Bat1.jpg" data-sub-html="Bat Trackmaking 1" data-html="#video1" >
+			<!-- Bats -->
+			<li data-poster="/thumbnails/Bat1.jpg" data-sub-html="Bat Trackmaking 1. Jones and Hasiotis, in review." data-html="#video1" >
 				<img src="/thumbnails/Bat1.jpg" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/Bat2.png" data-sub-html="Bat Trackmaking 2" data-html="#video2" >
+			<li data-poster="/thumbnails/Bat2.png" data-sub-html="Bat Trackmaking 2. Jones and Hasiotis, in review." data-html="#video2" >
 				<img src="/thumbnails/Bat2.png" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV8Carollia.png" data-sub-html="<em>Carollia perspicillata</em> Searching" data-html="#video3" >
+			<li data-poster="/thumbnails/SV8Carollia.png" data-sub-html="<em>Carollia perspicillata</em> Searching. Jones and Hasiotis, in review." data-html="#video3" >
 				<img src="/thumbnails/SV8Carollia.png" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV7Carollia.jpg" data-sub-html="<em>Carollia perspicillata</em> Hoping" data-html="#video4" >
+			<li data-poster="/thumbnails/SV7Carollia.jpg" data-sub-html="<em>Carollia perspicillata</em> Hoping. Jones and Hasiotis, in review." data-html="#video4" >
 				<img src="/thumbnails/SV7Carollia.jpg" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV6Carollia.png" data-sub-html="<em>Carollia perspicillata</em> One-armed Crawl</a>" data-html="#video5" >
+			<li data-poster="/thumbnails/SV6Carollia.png" data-sub-html="<em>Carollia perspicillata</em> One-armed Crawl</a>. Jones and Hasiotis, in review." data-html="#video5" >
 				<img src="/thumbnails/SV6Carollia.png" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV4Carollia.png" data-sub-html="<em>Carollia perspicillata</em> Breastrokelike</a>" data-html="#video6" >
+			<li data-poster="/thumbnails/SV4Carollia.png" data-sub-html="<em>Carollia perspicillata</em> Breastrokelike</a>. Jones and Hasiotis, in review." data-html="#video6" >
 				<img src="/thumbnails/SV4Carollia.png" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV3Carollia.png" data-sub-html="<em>Carollia perspicillata</em> Diagonal Sequence Walk" data-html="#video7" >
+			<li data-poster="/thumbnails/SV3Carollia.png" data-sub-html="<em>Carollia perspicillata</em> Diagonal Sequence Walk. Jones and Hasiotis, in review." data-html="#video7" >
 				<img src="/thumbnails/SV3Carollia.png" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV5Dermanura.jpg" data-sub-html="<em>Dermanura phaeotis</em> Breaststrokelike" data-html="#video8" >
+			<li data-poster="/thumbnails/SV5Dermanura.jpg" data-sub-html="<em>Dermanura phaeotis</em> Breaststrokelike. Jones and Hasiotis, in review." data-html="#video8" >
 				<img src="/thumbnails/SV5Dermanura.jpg" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV2Desmodus.jpg" data-sub-html="<em>Desmodus rotundus</em> Diagonal Sequence Walk" data-html="#video9" >
+			<li data-poster="/thumbnails/SV2Desmodus.jpg" data-sub-html="<em>Desmodus rotundus</em> Diagonal Sequence Walk. Jones and Hasiotis, in review." data-html="#video9" >
 				<img src="/thumbnails/SV2Desmodus.jpg" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV1Desmodus.jpg" data-sub-html="<em>Desmodus rotundus</em> Bounding" data-html="#video10" >
+			<li data-poster="/thumbnails/SV1Desmodus.jpg" data-sub-html="<em>Desmodus rotundus</em> Bounding. Jones and Hasiotis, in review." data-html="#video10" >
 				<img src="/thumbnails/SV1Desmodus.jpg" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV4Hylonycteris.jpg" data-sub-html="<em>Hylonycteris</em> underwoodi Breaststrokelike" data-html="#video11" >
+			<li data-poster="/thumbnails/SV4Hylonycteris.jpg" data-sub-html="<em>Hylonycteris</em> underwoodi Breaststrokelike. Jones and Hasiotis, in review." data-html="#video11" >
 				<img src="/thumbnails/SV4Hylonycteris.jpg" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV6Longchorhina.png" data-sub-html="<em>Lonchorhina aurita</em> searching" data-html="#video12" >
+			<li data-poster="/thumbnails/SV6Longchorhina.png" data-sub-html="<em>Lonchorhina aurita</em> searching. Jones and Hasiotis, in review." data-html="#video12" >
 				<img src="/thumbnails/SV6Longchorhina.png" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/SV5Saccopteryx.jpg" data-sub-html="<em>Saccopteryx bilineata</em> Searching" data-html="#video13" >
+			<li data-poster="/thumbnails/SV5Saccopteryx.jpg" data-sub-html="<em>Saccopteryx bilineata</em> Searching. Jones and Hasiotis, in review." data-html="#video13" >
 				<img src="/thumbnails/SV5Saccopteryx.jpg" height="200px" width="300px"/>
+			</li>
+			<!-- Elephants -->
+			<li data-poster="/thumbnails/elephant1.jpg" data-sub-html="For details of experiment, see Platt, B.F., et al., 	
+			Emperical determination of physical controls on megafaunal footprint formation through neoichnological experiments with elephants.
+			Palaios, in review." data-html="#video14" >
+				<img src="/thumbnails/elephant1.jpg" height="200px" width="300px"/>
+			</li>
+			<li data-poster="/thumbnails/elephant2.jpg" data-sub-html="For details of experiment, see Platt, B.F., et al., 	
+			Emperical determination of physical controls on megafaunal footprint formation through neoichnological experiments with elephants.
+			Palaios, in review." data-html="#video15" >
+				<img src="/thumbnails/elephant2.jpg" height="200px" width="300px"/>
+			</li>
+			<li data-poster="/thumbnails/elephant3.jpg" data-sub-html="For details of experiment, see Platt, B.F., et al., 	
+			Emperical determination of physical controls on megafaunal footprint formation through neoichnological experiments with elephants.
+			Palaios, in review." data-html="#video16" >
+				<img src="/thumbnails/elephant3.jpg" height="200px" width="300px"/>
+			</li>
+			<li data-poster="/thumbnails/elephant4.jpg" data-sub-html="For details of experiment, see Platt, B.F., et al., 	
+			Emperical determination of physical controls on megafaunal footprint formation through neoichnological experiments with elephants.
+			Palaios, in review." data-html="#video17" >
+				<img src="/thumbnails/elephant4.jpg" height="200px" width="300px"/>
+			</li>
+			<li data-poster="/thumbnails/elephant5.jpg" data-sub-html="For details of experiment, see Platt, B.F., et al., 	
+			Emperical determination of physical controls on megafaunal footprint formation through neoichnological experiments with elephants.
+			Palaios, in review." data-html="#video18" >
+				<img src="/thumbnails/elephant5.jpg" height="200px" width="300px"/>
 			</li>
 		</ul>
 		

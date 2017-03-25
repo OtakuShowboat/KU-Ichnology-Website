@@ -34,7 +34,6 @@
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lightgallery.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-video.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-thumbnail.js"></script>
-	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/autoplay.js"></script>
 	<script> 
 	$(function(){
   $("#header").load("/header.html"); 
@@ -51,62 +50,67 @@
 
 
   <div id="header"></div>
-<!-- Hidden video div -->
-    
+
     <div class="row content">
       <!-- Start main content wrapper -->
 		<div id="experimentnav"></div>
-		
+
       <div class="col-sm-9 text-left">
+        <!-- Start content -->
+		
 		<div style="display:none;" id="video1">
 			<video class="lg-video-object lg-html5" controls preload="none">
-			<source src="/videos/experiments/Stingrayfeedingpit1.mp4" type="video/mp4">
-			Your browser does not support HTML5 video.
+				<source src="/videos/experiments/vinegaroon_trackmaking_1.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
 			</video>
 		</div>
+		
 		<div style="display:none;" id="video2">
 			<video class="lg-video-object lg-html5" controls preload="none">
-			<source src="/videos/experiments/Stingrayfeedingpit2.mp4" type="video/mp4">
-			Your browser does not support HTML5 video.
+				<source src="/videos/experiments/vinegaroon_trackmaking_2.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
 			</video>
 		</div>
+		
 		<div style="display:none;" id="video3">
 			<video class="lg-video-object lg-html5" controls preload="none">
-			<source src="/videos/experiments/Stingrayfeedingpit3.mp4" type="video/mp4">
-			Your browser does not support HTML5 video.
+				<source src="/videos/experiments/vinegaroon_trackmaking_3.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
 			</video>
 		</div>
-
-        <!-- Start content -->
-        <span style="font-size:15px; font-weight:bold;">Stingray Behaviors</span>
-        <br />
-        <br />
-        UNDER CONSTRUCTION<br />
 		
-        <br />
+		
+		<h3><strong>Arachnid Behaviors</strong></h3>
+		<p>Click or tap an image below to access the video gallery.<p>
+		
 		<ul id="html5-videos">
-			<li data-poster="/thumbnails/stingpit1.png" data-sub-html="Stingray Feeding Pit 1" data-html="#video1" >
-				<img src="/thumbnails/stingpit1.png" height="200px" width="300px"/>
+			<!-- Crayfish -->
+			<li data-poster="/thumbnails/vinegaroon1.jpg" data-sub-html="For details of experiment, see Schmerge, J.S., Riese, D.J., and Hasiotis, S.T., 	
+The Neoichnology of Vinegaroons.
+PALAIOS, in review." data-html="#video1" >
+				<img src="/thumbnails/vinegaroon1.jpg" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/stingpit2.jpg" data-sub-html="Stingray Feeding Pit 2" data-html="#video2" >
-				<img src="/thumbnails/stingpit2.jpg" height="200px" width="300px"/>
+			<li data-poster="/thumbnails/vinegaroon2.jpg" data-sub-html="For details of experiment, see Schmerge, J.S., Riese, D.J., and Hasiotis, S.T., 	
+The Neoichnology of Vinegaroons.
+PALAIOS, in review." data-html="#video2" >
+				<img src="/thumbnails/vinegaroon2.jpg" height="200px" width="300px"/>
 			</li>
-			<li data-poster="/thumbnails/stingpit3.jpg" data-sub-html="Stingray Feeding Pit 3" data-html="#video3" >
-				<img src="/thumbnails/stingpit3.jpg" height="200px" width="300px"/>
+			<li data-poster="/thumbnails/vinegaroon3.jpg" data-sub-html="For details of experiment, see Schmerge, J.S., Riese, D.J., and Hasiotis, S.T., 	
+The Neoichnology of Vinegaroons.
+PALAIOS, in review." data-html="#video3" >
+				<img src="/thumbnails/vinegaroon3.jpg" height="200px" width="300px"/>
 			</li>
-
 		</ul>
-		
       </div><!-- End content -->
     </div><!-- End main content wrapper -->
-	
 
-    
     <div class="clearer"></div>
 
     <div id="footer">
       </div>
   </div><!-- End container -->
+
+
 
 <!-- Start of StatCounter Code for Default Guide -->
 <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/analyticstracking.php") ?>

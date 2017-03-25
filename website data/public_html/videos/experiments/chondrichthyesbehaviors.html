@@ -30,6 +30,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/rw_common/themes/alpha/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/javascript.js"></script>
+	<link href="/rw_common/themes/alpha/lightgallery/css/lightgallery.css" rel="stylesheet" />
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lightgallery.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-video.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-thumbnail.js"></script>
 	<script> 
 	$(function(){
   $("#header").load("/header.html"); 
@@ -46,32 +50,60 @@
 
 
   <div id="header"></div>
-
+<!-- Hidden video div -->
+    
     <div class="row content">
       <!-- Start main content wrapper -->
 		<div id="experimentnav"></div>
-
+		
       <div class="col-sm-9 text-left">
+		<div style="display:none;" id="video1">
+			<video class="lg-video-object lg-html5" controls preload="none">
+			<source src="/videos/experiments/Stingrayfeedingpit1.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+			</video>
+		</div>
+		<div style="display:none;" id="video2">
+			<video class="lg-video-object lg-html5" controls preload="none">
+			<source src="/videos/experiments/Stingrayfeedingpit2.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+			</video>
+		</div>
+		<div style="display:none;" id="video3">
+			<video class="lg-video-object lg-html5" controls preload="none">
+			<source src="/videos/experiments/Stingrayfeedingpit3.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+			</video>
+		</div>
+
         <!-- Start content -->
-        <span style="font-size:15px; font-weight:bold;">Chicken Coarse Sand 1</span>
+        <h3><strong>Chondrichthyan Behaviors</strong></h3>
+		<p>Click or tap an image below to access the video gallery.<p>
+		
         <br />
-        <br />
-        For details of experiment, see Falk, 2014: Foot and Hindlimb Morphology, Soft Tissues, and Tracemaking Behaviors of Early Cretaceous Birds from China and the Republic of Korea with a Comparison to Modern Avian Morphology and Behavior<br />
-        <br />
-   		<video width="654" height="368" controls loop>
-		<source src="/videos/experiments/Chicken Coarse Sand 1.mp4" type="video/mp4">
-		Sorry, your browser does not support HTML5 video playback for H.264.
-		</video>				   
+		<ul id="html5-videos">
+			<li data-poster="/thumbnails/stingpit1.png" data-sub-html="Stingray Feeding Pit 1" data-html="#video1" >
+				<img src="/thumbnails/stingpit1.png" height="200px" width="300px"/>
+			</li>
+			<li data-poster="/thumbnails/stingpit2.jpg" data-sub-html="Stingray Feeding Pit 2" data-html="#video2" >
+				<img src="/thumbnails/stingpit2.jpg" height="200px" width="300px"/>
+			</li>
+			<li data-poster="/thumbnails/stingpit3.jpg" data-sub-html="Stingray Feeding Pit 3" data-html="#video3" >
+				<img src="/thumbnails/stingpit3.jpg" height="200px" width="300px"/>
+			</li>
+
+		</ul>
+		
       </div><!-- End content -->
     </div><!-- End main content wrapper -->
+	
 
+    
     <div class="clearer"></div>
 
     <div id="footer">
       </div>
   </div><!-- End container -->
-
-
 
 <!-- Start of StatCounter Code for Default Guide -->
 <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/analyticstracking.php") ?>

@@ -41,7 +41,7 @@
         enableThumbSwipe: true,
         swipeThreshold: 50,
 
-        loadYoutubeThumbnail: true,
+        loadYoutubeThumbnail: false,
         youtubeThumbSize: 1,
 
         loadVimeoThumbnail: true,
