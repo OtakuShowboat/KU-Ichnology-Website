@@ -34,7 +34,7 @@
 
         exThumbImage: false,
         showThumbByDefault: true,
-        toogleThumb: true,
+        toogleThumb: false,
         pullCaptionUp: true,
 
         enableThumbDrag: true,

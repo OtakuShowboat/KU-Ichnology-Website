@@ -30,6 +30,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/rw_common/themes/alpha/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/rw_common/themes/alpha/javascript.js"></script>
+	<link href="/rw_common/themes/alpha/lightgallery/css/lightgallery.css" rel="stylesheet" />
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lightgallery.js"></script>
+	<script type="text/javascript" src="/rw_common/themes/alpha/lightgallery/js/lg-thumbnail.js"></script>
 	<script> 
 	$(function(){
   $("#header").load("/header.html"); 
@@ -42,16 +45,16 @@
 </style>
 </head>
 
-<body>
+<body class="container-fluid">
   <div id="container">
     <!-- Start container -->
 
     <div id="header"></div>
-    <div id="contentContainer">
+    <div class="row content">
       <!-- Start main content wrapper -->
 		<div id="sidenav"></div>
 
-      <div class="contentTraces" id="content">
+      <div class="col-sm-9 text-left">
         <!-- Start content -->
         <span style=
         "font-size:15px; font-weight:bold;"><em>TRACE NAME: </em>REF, YR<br />
@@ -81,6 +84,15 @@
         Under Construction. Check back soon!
         <br />
         <br />
+		<!-- Gallery Code 
+		<div id="lightSlider" >
+		
+		<a href=""  data-sub-html="">
+        <img class="img-responsive" src="" width="201px" height="139px" />
+		</a>
+        
+		</div>
+		<!-- End Gallery Code /-->
         </span>
 
         

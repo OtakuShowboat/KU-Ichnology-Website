@@ -220,7 +220,7 @@
   vertical-align: middle;
 }
 
-.lg-toolbar, .lg-prev, .lg-next {
+.lg-toolbar, .lg-prev, .lg-next, .lg-sub-html, .lg-thumb-outer   {
   opacity: 1;
   -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear;
   -moz-transition: -moz-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear;
@@ -243,6 +243,17 @@
   -webkit-transform: translate3d(0, -10px, 0);
   transform: translate3d(0, -10px, 0);
 }
+.lg-hide-items .lg-sub-html {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
+
+.lg-hide-items .lg-thumb-outer {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
 
 body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-object {
   -webkit-transform: scale3d(0.5, 0.5, 0.5);
@@ -264,7 +275,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-  background-color: #0D0A0A;
+  background-color: rgba(0, 0, 0, 0.45);
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -345,7 +356,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   bottom: 100px;
 }
 .lg-outer .lg-toogle-thumb {
-  background-color: #0D0A0A;
+  background-color: rgba(0,0,0,0);
   border-radius: 2px 2px 0 0;
   color: #999;
   cursor: pointer;
